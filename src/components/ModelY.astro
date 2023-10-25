@@ -23,13 +23,13 @@ import Section from "./Section.astro";
         >
     </div>
 
-    <img
-        slot="background"
-        alt="Model Y"
-        class="h-full w-full object-cover object-center bg-image"
-        src="model-y.avif"
-        id="bg-image-modely"
-    />
+    <video
+    slot="background"
+    class="object-center object-cover h-full w-full"
+    autoplay
+    muted
+    loop
+    src="/model_y-mp4.webm"></video>
 </Section>
 
 <script>
@@ -44,13 +44,11 @@ import Section from "./Section.astro";
         }
     }
 
-    var imageElement = document.querySelector(
-        "#bg-image-modely",
-    ) as HTMLImageElement;
+    var videoElement = document.querySelector(
+        "#bg-video-modely",
+    ) as HTMLVideoElement;
 
     if (isEdge()) {
-        imageElement.src = "model-y.webp";
-    } else {
-        imageElement.src = "model-y.avif";
-    }
+        videoElement.src = "model_y-mp4.webm";
+    } 
 </script>
