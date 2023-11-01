@@ -1,5 +1,5 @@
 ---
-const { color, title, subtitle, id, showFooterContent } = Astro.props;
+const { color, title, subtitle, content, id, showFooterContent } = Astro.props;
 const textColor = `text-${color}`;
 import FooterMenu from "./FooterMenu.astro";
 ---
@@ -11,12 +11,15 @@ import FooterMenu from "./FooterMenu.astro";
 >
     <div class="z-30 relative h-full flex flex-col">
         <header>
-            <h2 class={`${textColor} pt-40 text-[40px] font-medium`}>
+            <h2 class={`${textColor} pt-20 text-[40px] font-semibold`}>
                 {title}
             </h2>
-            <p class={`${textColor} text-sm`}>
+            <p class={`${textColor} text-lg`}>
                 {subtitle}
             </p>
+            <small class={`${textColor} text-xs`}>
+                 {content}
+            </small>
         </header>
 
         <footer class="flex flex-col flex-grow justify-end pb-20">

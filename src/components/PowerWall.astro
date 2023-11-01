@@ -3,32 +3,31 @@ import Section from "./Section.astro";
 ---
 
 <Section
-    title="Solar y Powerwall"
-    subtitle="Energía para todos"
+    title="Powerwall"
     color="black"
-    id="powerwall"
+    id="PowerWall"
 >
     <div slot="footer" class="gap-x-6 flex mx-auto">
         <a
-            class="border-[3px] border-gray-800 bg-gray-800 text-sm rounded font-medium text-white px-16 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500"
+            class=" bg-white bg-opacity-30 p-4 text-sm rounded font-medium text-black px-20 py-2 inline-block"
             href="#"
         >
-            Saber más</a
+            Order Now</a
         >
-        <!-- <a
-      class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
-      href="#"
+        <a
+        class=" bg-black bg-opacity-30 p-4  text-sm rounded font-medium text-white px-20 py-2 inline-block"
+        href="#"
     >
-      Saber más</a
-    > -->
+        Learn More</a
+    >
     </div>
 
     <img
         slot="background"
-        alt="Solar y Powerwall"
+        alt="PowerWall"
         class="h-full w-full object-cover object-center"
-        src="powerwall.avif"
-        id="bg-image-powerwall"
+        src="Homepage-Powerwall-Desktop.avif"
+        id="bg-image-Powerwall-US.avif"
     />
 </Section>
 
@@ -44,13 +43,13 @@ import Section from "./Section.astro";
         }
     }
 
-    var imageElement = document.querySelector(
-        "#bg-image-powerwall",
-    ) as HTMLImageElement;
+    let imageElement = document.querySelector(
+        "#bg-image-Powerwall-US.avif"
+    ) as HTMLImageElement; // TypeScript
 
     if (isEdge()) {
-        imageElement.src = "powerwall.webp";
+        imageElement.src = "Homepage-Powerwall-Desktop.avif";
     } else {
-        imageElement.src = "powerwall.avif";
+        imageElement.src = "Powerwall-US.avif";
     }
 </script>
