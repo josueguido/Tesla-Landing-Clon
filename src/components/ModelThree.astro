@@ -9,18 +9,29 @@ import Section from "./Section.astro";
     id="model-3"
 >
     <div slot="footer" class="gap-x-6 flex mx-auto">
-        <a
-            class="bg-white bg-opacity-30 p-4 text-sm rounded font-medium text-black px-20 py-2 inline-block"
-            href="#"
-        >
-            Order Now</a
-        >
-        <a
-            class="bg-black bg-opacity-30 p-4 text-sm rounded font-medium text-white px-20 py-2 inline-block"
-            href="#"
-        >
-            Demo Drive</a
-        >
+        <div>
+            <div class="flex flex-row gap-x-6 mx-6 mb-8">
+                <a
+                    class="bg-white bg-opacity-60 p-4 text-sm rounded font-medium text-black px-20 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center"
+                    href="#"
+                >
+                    Order Now</a
+                >
+                <a
+                    class="bg-black bg-opacity-25 p-4 text-sm rounded font-medium text-white px-20 py-2 transition-colors hover:bg-white hover:text-black inline-flex justify-center items-center"
+                    href="#"
+                >
+                    Demo Drive</a
+                >
+            </div>
+
+            <p class="text-xs text-white my-2 mx-6">
+                <span>
+                    *Excludes taxes and fees with price subject to change.
+                    Available in select states. See Details
+                </span>
+            </p>
+        </div>
     </div>
 
     <img

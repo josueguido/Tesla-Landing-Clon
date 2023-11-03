@@ -10,19 +10,34 @@ import Section from "./Section.astro";
     id="model-x"
 >
     <div slot="footer" class="gap-x-6 flex mx-auto">
-        <a
-            class="bg-white bg-opacity-60 p-4 text-sm rounded font-medium text-black px-20 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center"
-            href="#"
-        >
-            Order Now</a
-        >
-        <a
-            class="bg-black bg-opacity-25 p-4 text-sm rounded font-medium text-white px-20 py-2 transition-colors hover:bg-white hover:text-black inline-flex justify-center items-center"
-            href="#"
-        >
-            Demo Drive</a
-        >
+        <div>
+            <div class="flex flex-row gap-x-6 mx-6 mb-8">
+                <a
+                    class="bg-white bg-opacity-60 p-4 text-sm rounded font-medium text-black px-20 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center"
+                    href="#"
+                >
+                    Order Now</a
+                >
+                <a
+                    class="bg-black bg-opacity-25 p-4 text-sm rounded font-medium text-white px-20 py-2 transition-colors hover:bg-white hover:text-black inline-flex justify-center items-center"
+                    href="#"
+                >
+                    Demo Drive</a
+                >
+            </div>
+
+            <p class="text-xs text-white my-2 mx-6">
+                <span>
+                    *Price before incentives and savings is $79,990, excluding taxes and fees. Subject to change.
+                </span>
+                <br />
+                <a class="underline">
+                    Learn about est. gas savings.
+                </a>
+            </p>
+        </div>
     </div>
+
     <img
         slot="background"
         alt="Model X"
