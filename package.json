@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/tailwind": "^5.0.2",
     "astro": "^3.3.3",
+    "primereact": "^10.0.9",
     "tailwindcss": "^3.3.3"
   }
 }
