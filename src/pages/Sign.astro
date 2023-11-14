@@ -1,0 +1,71 @@
+---
+import Logo from "../components/Logo.astro";
+---
+
+<div slot="footer" class="mx-auto">
+      <div class="flex mx-10 my-6">
+            <Logo />
+      </div>
+
+      <section
+            class="flex bg-white w-full h-screen items-start justify-center"
+      >
+            <div class="flex flex-col gap-8">
+                  <p class="text-black font-light text-4xl">Sing In</p>
+                  <h1 class="flex text-start text-gray-500 font-extralight gap-2">
+                        Email
+                        <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 24 24"
+                              stroke-width="2"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                        >
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"
+                              ></path>
+                              <path
+                                    d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"
+                              ></path>
+                              <path d="M12 9v4"></path>
+                              <path d="M12 16v.01"></path>
+                        </svg>
+                  </h1>
+                  <input
+                        type="email"
+                        class="text-left bg-gray-100 py-2 px-20 rounded-lg font-extralight text-gray-700"
+                  />
+                  <button
+                        class="bg-blue-800 text-white items-center py-2 px-40 rounded-lg"
+                  >
+                        Next
+                  </button>
+                  <h2 class="text-center text-black font-sans underline">
+                        Trouble Signing In?
+                  </h2>
+                  <span class="text-center text-gray-400 text-sm font-light">
+                        Or
+                  </span>
+
+                  <button
+                        class="font-sans bg-gray-100 text-black items-center py-2 px-32 rounded-lg hover:bg-gray-300"
+                  >
+                        Create Account
+                  </button>
+            </div>
+      </section>
+</div>
+<footer
+      class=" flex justify-center items-center absolute bottom-0 w-full z-40 text-gray-700 text-xs font-medium"
+      id="landing-footer"
+>
+      <nav>
+            <ul class="flex [&>li>a]:inline-block [&>li>a]:px-2 [&>li>a]:py-2">
+                  <li><a href="#">Tesla © 2023</a></li>
+                  <li><a href="#">Privacy & Legal</a></li>
+                  <li><a href="#">Contact</a></li>
+            </ul>
+      </nav>
+</footer>
